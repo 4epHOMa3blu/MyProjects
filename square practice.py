@@ -1,7 +1,7 @@
 import time, random, math
 
 
-print ('Here you can upgrade your exponention skill')
+print('Here you can upgrade your exponention skill')
 
 mode = int(input('\nChoose mode:\n1) Single exponention\n2) Multiple exponention\nYour choice: '))
 
