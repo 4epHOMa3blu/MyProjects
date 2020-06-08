@@ -9,8 +9,7 @@ if mode == 1:
     if level == 1:
         print('\nEnter "0" if you want to finish')
         while True:
-            number = random.randint(11, 99)
-            print(f'\n{number}²')
+            print(f'\n{random.randint(11, 99)}²')
             print('Exponentiation guide:')
             print('1. Find the nearest 0-ending number and the difference between it and your number.')
             print('2. Add/subtract the same difference in another direction (26<-28->30).')
@@ -36,14 +35,13 @@ if mode == 1:
         mistake_count = 0
         print('\nEnter "0" if you want to finish')
         while True:
-            number = random.randint(11, 99)
-            print(f'\n{number}²')
+            print(f'\n{random.randint(11, 99)}²')
             start = time.time()
             answer = int(input('Answer: '))
 
             if answer == number ** 2:
                 print('Correct!')
-                print('Solved in %s sec' % round(time.time() - start, 2))
+                print(f'Solved in {round(time.time() - start, 2)} sec')
                 problem_count += 1
                 time.sleep(0.5)
                 continue
